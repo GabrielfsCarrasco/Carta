@@ -1,31 +1,24 @@
 body {
     font-family: Montserrat, sans-serif;
     background-color: #FF90BC;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     text-align: center;
-    padding: 100px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
+    padding: 20px; /* Ajustado para uma margem interna menor */
+    max-width: 100%; /* Ajustado para ocupar toda a largura da tela */
+    margin: 0 auto; /* Centraliza a página na tela */
 }
 
 .heart {
     color: red;
-    font-size: 50px;
+    font-size: 40px; /* Ajustado para uma fonte maior */
+    margin-bottom: 20px; /* Adiciona espaço inferior para separação */
 }
 
-.container {
-    text-align: center;
-    padding: 100px;
-    width: 700px; /* largura da página */
-    height: 700px; /* altura da página */
-    margin: 0 auto; /* centraliza a página na tela */
-}
-/* Estilo para o modal */
+/* Estilos para o modal */
 .modal {
     display: none;
     position: fixed;
@@ -38,7 +31,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Estilo para o conteúdo do modal */
+/* Estilos para o conteúdo do modal */
 .modal-content {
     background-color: #fefefe;
     position: absolute;
@@ -48,92 +41,43 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    text-align: center; /* Centraliza o texto */
+    max-width: 90%; /* Ajustado para uma largura máxima menor */
+    text-align: center;
 }
 
 .letter {
-    margin-bottom: 20px; /* Adiciona um espaço inferior */
-    font-size: 30px; /* Ajusta o tamanho da fonte do texto da carta */
-    max-width: 90%; /* Define a largura máxima do contêiner do texto da carta */
-    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-    padding: 0 60px; /* Adiciona um preenchimento nas laterais para aumentar o espaço */
+    font-size: 20px; /* Ajustado para uma fonte menor */
+    margin-bottom: 20px;
+    padding: 0 20px; /* Ajustado para um preenchimento menor */
 }
 
-/* Estilo para o botão "Sim" */
-#yes {
-    background-color: #4CAF50;
+/* Estilos para os botões "Sim" e "Não" */
+.btn {
+    background-color: #4CAF50; /* Cor do botão "Sim" */
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 25px;
-    margin-right: 30px;
+    font-size: 20px; /* Ajustado para uma fonte menor */
+    margin-right: 10px; /* Espaçamento entre os botões */
 }
 
-/* Estilo para o botão "Não" */
 #no {
-    background-color: #f44336;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 25px;
-    margin-left: ;
+    background-color: #f44336; /* Cor do botão "Não" */
+    margin-left: 10px; /* Espaçamento entre os botões */
 }
 
-#no.clicked {
-    transform: translateX(100%); /* Move o botão para a esquerda quando clicado */
-}
-
-/* Estilo para o botão de fechar */
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
-}
-.btn {
-    color: red;
-    font-size: 60px; /* tamanho do coração */
-    position: relative;
-}
-
-.btn{
-  border: none;
-  background: white;
-  border-radius: 50%;
-  padding: 15px;
-  
-}
-@media only screen and (max-width: 600px) {
-    .modal-content {
-        padding: 10px; /* Reduz o preenchimento geral */
-    }
-
-    .letter {
-        font-size: 18px; /* Reduz o tamanho da fonte para dispositivos móveis */
-        max-width: 90%; /* Reduz a largura máxima do contêiner */
-        padding: 0 20px; /* Reduz o preenchimento nas laterais */
-    }
-    .container {
-        width: 100%; /* Define a largura total para telas menores */
-    }
-
-    h1 {
-        font-size: 20px; /* Reduz o tamanho da fonte para títulos */
-    }
-
-    p {
-        font-size: 14px; /* Reduz o tamanho da fonte para parágrafos */
-    }
 }
