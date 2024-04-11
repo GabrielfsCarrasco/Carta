@@ -115,4 +115,25 @@ body {
   padding: 15px;
   
 }
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        padding: 10px; /* Reduz o preenchimento geral */
+    }
 
+    .letter {
+        font-size: 18px; /* Reduz o tamanho da fonte para dispositivos móveis */
+        max-width: 90%; /* Reduz a largura máxima do contêiner */
+        padding: 0 20px; /* Reduz o preenchimento nas laterais */
+    }
+    .container {
+        width: 100%; /* Define a largura total para telas menores */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduz o tamanho da fonte para títulos */
+    }
+
+    p {
+        font-size: 14px; /* Reduz o tamanho da fonte para parágrafos */
+    }
+}
